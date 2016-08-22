@@ -1,1 +1,1 @@
-HipsuliHoi!
+Tässä on clientin kansio!
