@@ -10,7 +10,7 @@ var colyseus = require('colyseus')
   , server = http.createServer(app)
   , gameServer = new colyseus.Server({server: server})
 
-gameServer.register('tictactoe', require('./rooms/tictactoe'))
+gameServer.register('shadoworld', require('./rooms/shadoworld'))
 server.listen(port);
 
 app.use(express.static(__dirname + "/../frontend/public"))
