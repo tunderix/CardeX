@@ -1,4 +1,2 @@
-tic-tac-toe server
+Koodiapinan ja Ionin peliservu.
 ===
-
-Project structure based on [colyseus-starter](https://github.com/endel/colyseus-starter)
