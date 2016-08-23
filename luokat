@@ -1,0 +1,53 @@
+
+LUOKKARAKENTEET
+
+luokka: pelaaja
+ominaisuudet:
+hahmoluokka
+liikenopeus
+max terveys
+joukkue
+
+luokka: joukkue
+ominaisuudet:
+pelaajien määrä
+joukkueen numero
+
+luokka: kartta
+ominaisuudet:
+joukkueiden määrä
+leveys
+korkeus
+peliaika
+
+luokka: lippu
+ominaisuudet:
+tekstuuri
+joukkue
+captured?
+
+luokka: ase
+ominaisuudet:
+tekstuuri
+tulivoima
+panosten määrä
+x
+y
+
+luokka: valonlähde (esim. taskulamppu)
+ominaisuudet:
+tekstuuri
+valon määrä
+toiminnan kesto
+liiketapa
+kerättävissä bool
+x
+y
+
+luokka: seinä
+ominaisuudet:
+tekstuuri
+x
+y
+
+
