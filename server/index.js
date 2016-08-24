@@ -1,18 +1,16 @@
-"use strict";
-
-var colyseus = require('colyseus')
+var colyseus = require('./colyseus')
+  , ShadoWorld = require('./shadoworld')
   , http = require('http')
-
   , express = require('express')
-  , app = express()
-  , port = process.env.PORT || 3553
+  , port = process.env.PORT || 3001
+  , app = express();
 
-  , server = http.createServer(app)
+var server = http.createServer(app)
   , gameServer = new colyseus.Server({server: server})
 
-gameServer.register('shadoworld', require('./rooms/shadoworld'))
+gameServer.register('shadoworld', ShadoWorld)
+
+app.use(express.static(__dirname));
 server.listen(port);
 
-app.use(express.static(__dirname + "/../frontend/public"))
-
-console.log(`Listening on ws://localhost:${ port }`)
+console.log(`Listening on http://localhost:${ port }`)
