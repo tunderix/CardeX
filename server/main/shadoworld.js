@@ -8,8 +8,6 @@ class ShadoWorld extends Room {
 
     this.channel = options.channel;
     
-    this.setPatchRate(1000 / 20);
-
     this.setState({
       messages: [ `Welcome to ${ options.channel } shadoworld!.` ]
     })
