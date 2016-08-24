@@ -1,5 +1,5 @@
-var colyseus = require('./colyseus')
-  , ShadoWorld = require('./shadoworld')
+var colyseus = require('colyseus')
+  , ShadoWorld = require('./main/shadoworld')
   , http = require('http')
   , express = require('express')
   , port = process.env.PORT || 3001
