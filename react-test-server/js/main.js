@@ -12,7 +12,7 @@ class Main extends React.Component {
     var endpoint = location.protocol.replace("http", "ws") + "//" + location.hostname;
 
     // development server
-    if (location.port && location.port !== "80") { endpoint += ":2657" }
+    if (location.port && location.port !== "80") { endpoint += ":3000" }
 
     this.colyseus = new Colyseus(endpoint)
     this.chatRoom = this.colyseus.join('chat', { channel: window.location.hash || "#default" })
