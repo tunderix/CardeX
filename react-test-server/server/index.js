@@ -1,4 +1,4 @@
-var colyseus = require('colyseus')
+var colyseus = require('./colyseus')
   , ChatRoom = require('./chat_room')
   , http = require('http')
   , express = require('express')
