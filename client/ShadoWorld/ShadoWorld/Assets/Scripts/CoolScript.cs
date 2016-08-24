@@ -12,7 +12,7 @@ public class CoolScript : MonoBehaviour {
 		Debug.Log ("onStart");
 		colyseus = new Colyseus.Client ("ws://91.159.112.72:3001");
 		room = colyseus.Join ("shadoworld");
-
+		
 	}
 
 	void Room_OnUpdate (object sender, RoomUpdateEventArgs e)
