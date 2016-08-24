@@ -7,6 +7,10 @@ class ShadoWorld extends Room {
     super(options)
 
     this.channel = options.channel;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> cb49489d9ce87324a2f982e5d119ebbd1e426565
     this.setState({
       messages: [ `Welcome to ${ options.channel } shadoworld!.` ]
     })
