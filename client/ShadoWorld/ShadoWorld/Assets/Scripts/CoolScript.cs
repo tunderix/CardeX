@@ -24,5 +24,7 @@ public class CoolScript : MonoBehaviour {
 			// received patched state
 			// e.patches <- do something with e.patches
 		}
+
+		//Tell game logic to move player
 	}
 }

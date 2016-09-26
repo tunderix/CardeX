@@ -1,5 +1,5 @@
 var Room = require('colyseus').Room
-    , StateHandler = require('./../handlers/StateHandler.js')
+var StateHandler = require('./../Controllers/StateHandler.js')
 
 const UPDATE_RATE = 30
 
@@ -28,7 +28,6 @@ class ShadoWorld extends Room {
   onJoin (client) {
     console.log(client.id, "joined shadoworld!")
     
-
     //Create a player!
     let player = this.state.createHero( {
       id: client.id,
@@ -40,6 +39,12 @@ class ShadoWorld extends Room {
   onMessage (client, data) {
     console.log(client.id, "sent message on shadoworld")
     player = this.players.get( client )
+    let key = data.keyPressed
+
+    let moveX = data.X
+    let moveY = data.Y
+
+    let value = ""+moveX+":"+moveY+""
 
     //
     // Input in here! 
@@ -54,6 +59,8 @@ class ShadoWorld extends Room {
       player.moveTo ( value )
     }
 
+    //Send Message to all players to update players
+    
   }
 
   onLeave (client) {
