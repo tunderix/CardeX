@@ -8,8 +8,7 @@ class ShadoWorld extends Room {
   constructor (options) {
     super(options)
 
-    this.channel = options.channel;
-    
+    this.channel = options.channel
     this.players = new WeakMap()
     this.setState(new StateHandler( this.clock, options.map ))
     this.updateInterval = setInterval(this.tick.bind(this), 1000 / UPDATE_RATE)
